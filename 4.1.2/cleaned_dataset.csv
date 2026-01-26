@@ -1,0 +1,21 @@
+ID,Age,Income,Gender,City,Purchase,Year
+1,25.0,50000.0,Male,New York,Yes,2023
+2,30.0,62000.0,Female,Boston,No,2023
+3,22.0,60000.0,Male,Los Angeles,Yes,2023
+4,35.0,45000.0,Female,Chicago,No,2023
+5,28.0,52000.0,Male,Miami,Yes,2023
+6,31.8,49000.0,Female,Houston,No,2023
+7,32.0,62000.0,Male,San Francisco,Yes,2023
+8,45.0,47000.0,Female,Dallas,No,2023
+9,37.0,58000.0,Unknown,Seattle,Yes,2023
+10,29.0,53000.0,Male,Austin,No,2023
+11,26.0,51000.0,Female,Denver,Yes,2023
+12,31.8,55000.0,Male,Orlando,No,2023
+13,33.0,62000.0,Female,Atlanta,Yes,2023
+14,34.0,62000.0,Male,Phoenix,No,2023
+15,36.0,61000.0,Female,Portland,Yes,2023
+16,31.0,54000.0,Male,New York,Yes,2023
+17,38.0,57000.0,Female,Boston,No,2023
+18,40.0,56000.0,Male,Los Angeles,Yes,2023
+19,27.0,48000.0,Unknown,Chicago,No,2023
+20,31.8,59000.0,Female,Miami,Yes,2023

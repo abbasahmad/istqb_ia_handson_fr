@@ -1,0 +1,33 @@
+Objectif :
+Apprendre comment un perceptron peut être utilisé pour résoudre une fonction logique simple (AND) en modifiant les poids au fil des époques. Epoch
+
+EPOCHS
+
+La table de vérité pour la fonction AND est :
+Entrée X1	Entrée X2	Sortie Y
+0	0	0
+0	1	0
+1	0	0
+1	1	1
+
+L’objectif du perceptron est d’apprendre à prédire la sortie Y pour chaque paire d’entrées 
+(X1,X2)
+
+Un perceptron est basé sur :
+Une fonction d'activation (souvent un seuil simple).
+Une règle d'apprentissage qui met à jour les poids selon l'erreur.
+
+Yprédit = step(W1*X1 + W2*X2 + b)
+
+Où: 
+W1, W2 sont les poids
+b est le biais
+La fonction step(z) retourne 1 si z >= 0 sinon 0
+
+
+
+Le taux d’apprentissage (lr pour learning rate) est un hyperparamètre utilisé dans les algorithmes d’apprentissage supervisé, comme le Perceptron.
+Dans le contexte du Perceptron, il contrôle l'amplitude des mises à jour des poids après chaque étape d'entraînement.
+lr=0.1 est souvent choisi comme valeur par défaut
+Un lr élevé met à jour les poids de manière agressive, tandis qu’un lr faible les met à jour doucement.
+0.1 est suffisamment petit pour garantir que l’entraînement converge sans trop osciller autour de la solution optimale.

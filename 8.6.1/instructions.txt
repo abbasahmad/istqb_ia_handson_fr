@@ -1,0 +1,47 @@
+Objectifs
+    Introduire l’explicabilité des modèles en utilisant une méthode agnostique.
+    Permettre d’expliquer les prédictions d’un modèle.
+    Appliquer LIME sur un exemple concret
+
+
+CONTEXTE
+Le dataset Iris est un ensemble de données très connu en apprentissage automatique, utilisé pour des tâches de classification.
+Il contient 150 exemples de trois espèces de fleurs (setosa, versicolor, virginica), chacune ayant :
+4 caractéristiques (features) :
+Longueur des sépales (sepal length).
+Largeur des sépales (sepal width).
+Longueur des pétales (petal length).
+Largeur des pétales (petal width).
+Une étiquette correspondant à l’espèce de la fleur.
+
+
+
+Le script :
+Charge les données Iris :
+Variables d’entrée (X) : Les 4 caractéristiques.
+Variables cibles (y) : L’espèce de chaque fleur (0, 1 ou 2).
+
+Les noms des caractéristiques et des classes sont extraits.
+
+Entraîne un modèle Random Forest :
+Divise les données en ensembles d’entraînement (80%) et de validation (20%).
+Entraîne un Random Forest Classifier, un modèle robuste pour des tâches de classification.
+Utilise LIME pour l’explicabilité :
+LIME (Local Interpretable Model-agnostic Explanations) explique les prédictions du modèle en simulant des comportements locaux.
+Une explication est générée pour un échantillon spécifique Xtest[0]
+
+Affiche et enregistre les explications :
+
+Résumé textuel : Affiche une liste de caractéristiques importantes avec leurs contributions positives/négatives à la prédiction.
+Fichier HTML : Génère un fichier interactif (ex. : explanation.html) pour explorer les résultats visuellement.
+
+
+LIME identifie les caractéristiques les plus influentes pour cette prédiction :
+fContribution positive de +0.21. Cela signifie que cette plage de valeur favorise la classe prédite.
+Petal width (cm) entre 0.30 et 1.30 : Contribution positive de +0.165.
+Sepal width (cm) <= 2.80 : Contribution négative très faible (-0.009).
+Sepal length (cm) entre 5.75 et 6.40 : Contribution négative négligeable (-0.001).
+Ces contributions indiquent comment les caractéristiques influencent la prédiction finale du modèle pour cet exemple.
+
+
+Une contribution négative large dans le contexte des explications générées par LIME signifie que la caractéristique concernée réduit fortement la probabilité que le modèle choisisse la classe prédite. En d'autres termes, cette caractéristique agit contre la décision prise par le modèle.

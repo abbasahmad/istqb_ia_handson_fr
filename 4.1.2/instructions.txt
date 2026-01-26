@@ -1,0 +1,40 @@
+À partir d'un ensemble de données brutes fourni, appliquez les étapes de la section 4.1 : 
+Acquisition des données, Prétraitement des données et Ingénierie des caractéristiques.
+Cette activité constitue une première étape essentielle avant de passer à l'entraînement du modèle supervisé.
+
+Contexte :
+Les données brutes contiennent des informations variées mais nécessitent des étapes
+ de préparation pour être exploitables dans un modèle de machine learning.
+Votre mission est de nettoyer, structurer et enrichir ces données.
+
+Consignes :
+    Étape 1 : Acquisition des données
+        Chargez les données fournies à partir d’un fichier CSV dans un DataFrame Python.
+        Visualisez les premières lignes des données pour comprendre leur structure.
+    Étape 2 : Prétraitement des données
+        Traitement des valeurs manquantes :
+            Identifiez les colonnes contenant des valeurs manquantes.
+            Remplissez les valeurs manquantes à l’aide d’une méthode simple (par exemple, par la moyenne ou une valeur fixe)
+        Nettoyage des données :
+            Supprimez les doublons éventuels.
+    Étape 3 : Ingénierie des caractéristiques
+        Création de nouvelles colonnes :
+            Créez une colonne dérivée à partir d'une autre si pertinent (par exemple, calculer l’âge d’un individu à partir d’une colonne Date de Naissance).
+        Sélection des caractéristiques pertinentes :
+            Supprimez les colonnes inutiles ou redondantes.
+
+Critères de réussite :
+    Les données sont correctement importées et nettoyées.
+    Les valeurs manquantes sont traitées de manière appropriée.
+    Les données résultantes sont prêtes pour l’entraînement d’un modèle ML.
+
+
+Voici une brève description du fichier CSV :
+    ID : Identifiant unique pour chaque entrée (1 à 20).
+    Date : Date d'enregistrement des données, avec quelques valeurs manquantes.
+    Age : Âge de l'individu, certaines valeurs sont manquantes.
+    Income : Revenu mensuel (en dollars), avec quelques valeurs manquantes.
+    Gender : Genre de l'individu ("Male", "Female") avec des valeurs manquantes occasionnelles.
+    City : Ville associée à l'individu, inclut des valeurs dupliquées.
+    Purchase : Indique si l'individu a effectué un achat ("Yes", "No").
+    Irrelevant_Column : Une colonne sans données pertinentes (toutes les valeurs sont nulles), incluse pour être supprimée lors du nettoyage.

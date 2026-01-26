@@ -1,0 +1,43 @@
+Objectif de l'exercice :
+Comprendre les concepts de surajustement (overfitting) et sous-ajustement (underfitting).
+Visualiser les performances d’un modèle lorsque :
+    Les données d’entraînement sont trop limitées.
+    Les corrélations entre les caractéristiques et la cible sont faibles.
+
+Étapes de l'exercice :
+
+Étape 1 : Créer des ensembles de données simulés
+    Un ensemble de données pour démontrer :
+        Surajustement : Très peu de données, rendant le modèle trop adapté à l'ensemble d'entraînement.
+        Sous-ajustement : Données générées avec de faibles corrélations entre les caractéristiques et la cible.
+
+Étape 2 : Entraîner et évaluer un modèle
+    Utilisez une régression linéaire simple sur les deux ensembles pour voir comment le modèle se comporte.
+
+Étape 3 : Discussion des résultats
+    Surajustement : Le modèle s’adapte trop aux données limitées, donnant une très bonne performance sur l’ensemble d’entraînement, mais une mauvaise généralisation sur les données de test.
+    Sous-ajustement : Le modèle est incapable de capturer la relation entre les caractéristiques et la cible, donnant une mauvaise performance aussi bien sur l’entraînement que sur le test.
+
+
+Résultats attendus
+    Graphiques :
+        Surajustement : La ligne de régression s’ajuste parfaitement aux points d’entraînement mais diverge sur les données de test.
+        Sous-ajustement : La ligne de régression ne suit pas le schéma des points, indiquant une faible performance globale.
+    Metrics :
+        MSE (Mean Squared Error) élevé pour le test en cas de surajustement.
+        R² (R-carre) proche de 0 pour les données sous-ajustées.
+
+
+La cible (représentée par y_small et y_large) correspond à la variable dépendante ou valeur que l'on cherche à prédire.
+Elle est générée en fonction des caractéristiques d'entrée (X_small et X_large), avec des différences dans la manière dont ces relations sont simulées.
+Voici une explication détaillée :
+    La cible dans le contexte de la régression
+        En apprentissage supervisé, une cible est une valeur ou une variable que le modèle doit prédire en fonction des données d'entrée (les caractéristiques). Dans ce code :
+
+        X_small et X_large sont les caractéristiques ou entrées.
+        y_small et y_large sont les cibles ou sorties associées aux entrées respectives.
+
+        
+
+        Pour le sous-ajustement : Impact : Ces données limitées sont idéales pour observer le surajustement, car le modèle peut facilement "apprendre par cœur" la relation sur cet ensemble restreint.
+        Pour le sous-ajustement : Impact : Ces données sont idéales pour observer le sous-ajustement, car le modèle ne peut pas trouver de lien significatif entre les caractéristiques et la cible.

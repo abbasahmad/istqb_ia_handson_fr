@@ -1,0 +1,39 @@
+Objectif :
+    Diviser les données nettoyées et préparées dans la section 4.1.2 en ensembles d'apprentissage, de validation, et de test.
+    Créer, entraîner et tester un modèle de classification supervisée.
+    Comparer les précisions obtenues sur les ensembles de validation et de test, et expliquer la différence entre l’évaluation/l’ajustement et le test final.
+
+
+Étapes :
+1. Chargement des données nettoyées :
+    Importez les données nettoyées à partir du fichier cleaned_dataset.csv généré dans l'exercice précédent.
+
+2. Division des données :
+    Divisez les données en :
+        Ensemble d'apprentissage (70%) : Pour entraîner le modèle.
+        Ensemble de validation (15%) : Pour ajuster les hyperparamètres et évaluer les performances intermédiaires.
+        Ensemble de test (15%) : Pour évaluer la performance fonctionnelle (Chapitre 5) finale du modèle.
+
+3.Choix et création d'un modèle de classification :
+    Utilisez un modèle simple comme une régression logistique, un arbre de décision, ou un k-plus proches voisins (KNN) pour ce premier exercice.
+
+4. Entraînement du modèle :
+    Entraînez le modèle sur l’ensemble d’apprentissage.
+
+5. Évaluation sur les ensembles de validation et de test :
+    Calculez la précision (ou toute autre métrique comme la F1-score ou le rappel) pour les ensembles de validation et de test.
+
+6. Comparaison des résultats :
+    Expliquez pourquoi la précision peut varier entre les ensembles de validation et de test.
+
+
+Sortie des résultats :
+Précision sur les ensembles d’apprentissage, de validation, et de test.
+Rapports détaillés avec d'autres métriques.
+Explication : Différences entre les ensembles de validation et de test.
+
+
+Résultat attendu (exemple) :
+Précision sur validation : ~0.80.
+Précision sur test : ~0.78.
+Une légère baisse entre validation et test est normale car l'ensemble de test est complètement indépendant.

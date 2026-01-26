@@ -1,0 +1,21 @@
+Objectif
+Créer un modèle simple avec au moins 5 paramètres ayant des combinaisons qui génèrent un total proche de 2500 combinaisons possibles.
+Réduire ces combinaisons grâce à la méthode des tests par paires et exécuter les tests.
+
+
+1. Paramètres pour obtenir 2500 combinaisons
+Choisissons des paramètres et des valeurs de configuration comme suit :
+
+Paramètre	Valeurs possibles
+Type de modèle	4 (LogisticRegression, RandomForest, MLPClassifier, SVM)
+Nombre d'estimateurs	5 (10, 50, 100, 200, 500)
+Taux d'apprentissage	5 (0.1, 0.01, 0.001, 0.0001, 0.5)
+Taille d’entraînement	5 (50%, 60%, 70%, 80%, 90%)
+Métrique	5 (Accuracy, Precision, Recall, F1-Score, ROC-AUC)
+Le nombre total de combinaisons possibles est : 4*5*5*5*5 = 2500
+
+
+TELECHARGER PICT https://github.com/microsoft/pict/releases/
+pict parameters.txt > combinations.txt
+
+

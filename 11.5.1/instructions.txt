@@ -1,0 +1,31 @@
+Données
+Un jeu de données simplifié est fourni ci-dessous. Ce jeu contient des mesures de code source et une colonne indiquant si un défaut est présent (1) ou non (0).
+
+Complexité	Lignes de code	Couverture de tests (%)	Nombre de méthodes	Défaut
+8	300	80	10	1
+4	150	95	6	0
+7	250	70	8	1
+3	100	98	4	0
+6	200	85	7	1
+2	80	99	3	0
+5	180	90	6	1
+1	50	100	2	0
+Énoncé
+Construisez un modèle de prédiction des défauts en utilisant un langage de programmation tel que Python. Ce modèle doit :
+
+Utiliser au moins quatre caractéristiques parmi les suivantes :
+Complexité
+Lignes de code
+Couverture de tests (%)
+Nombre de méthodes
+Prédire la probabilité de défauts dans un code similaire.
+Permettre l'exploration des résultats en testant différentes combinaisons de caractéristiques pour observer l'impact sur la performance du modèle.
+
+
+Instructions supplémentaires
+Testez différentes combinaisons de caractéristiques :
+Vous pouvez ajuster le DataFrame X pour inclure uniquement certaines colonnes et observer comment cela affecte les performances du modèle.
+Visualisez les résultats :
+Utilisez des bibliothèques comme matplotlib ou seaborn pour tracer des graphiques montrant les performances du modèle en fonction des combinaisons de caractéristiques.
+Extension possible
+Pour aller plus loin, ajoutez une interface utilisateur ou un tableau de bord pour visualiser les prédictions et permettre une exploration interactive des résultats.
