@@ -17,8 +17,6 @@ X_large = np.random.rand(1000, 1) * 10  # 1000 points
 # Bruit important, pas de relation claire
 y_large = np.random.randn(1000, 1) * 2
 
-
-
 # Visualisation des deux ensembles
 plt.figure(figsize=(12, 5))
 

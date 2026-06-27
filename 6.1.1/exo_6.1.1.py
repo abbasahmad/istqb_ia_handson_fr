@@ -13,8 +13,8 @@ b = np.random.rand(1)  # Biais aléatoire
 print("Les poids : "+str(W)+" Le Biais : "+str(b))
 print("################Poids aleatoires " + str(W[0]) + " , " + str(W[1])+ " Biais RANDOM : "+ str(b))
 
-lr = 100           # Taux d'apprentissage
-epochs = 1000           # Nombre d'époques
+lr = 0.1           # Taux d'apprentissage
+epochs = 100           # Nombre d'époques
 
 #Reluction step function
 def step_function(z):
